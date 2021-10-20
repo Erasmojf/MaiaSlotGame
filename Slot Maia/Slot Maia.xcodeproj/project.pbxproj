@@ -19,6 +19,9 @@
 		F326B6AB271EFE8800B7762D /* game-over.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F326B6A3271EFE8800B7762D /* game-over.mp3 */; };
 		F326B6AC271EFE8800B7762D /* riseup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F326B6A4271EFE8800B7762D /* riseup.mp3 */; };
 		F326B6AD271EFE8800B7762D /* spin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F326B6A5271EFE8800B7762D /* spin.mp3 */; };
+		F36E3311272042860047FB32 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36E3310272042860047FB32 /* LogoView.swift */; };
+		F36E3313272042E90047FB32 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36E3312272042E90047FB32 /* Modifiers.swift */; };
+		F36E3315272049DF0047FB32 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36E3314272049DF0047FB32 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		F326B6A3271EFE8800B7762D /* game-over.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "game-over.mp3"; sourceTree = "<group>"; };
 		F326B6A4271EFE8800B7762D /* riseup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = riseup.mp3; sourceTree = "<group>"; };
 		F326B6A5271EFE8800B7762D /* spin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = spin.mp3; sourceTree = "<group>"; };
+		F36E3310272042860047FB32 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		F36E3312272042E90047FB32 /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		F36E3314272049DF0047FB32 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,8 @@
 		F326B6B0271EFFCB00B7762D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				F36E3312272042E90047FB32 /* Modifiers.swift */,
+				F36E3314272049DF0047FB32 /* Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -111,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				F326B692271EF69500B7762D /* ContentView.swift */,
+				F36E3310272042860047FB32 /* LogoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -193,7 +202,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F36E3315272049DF0047FB32 /* Extensions.swift in Sources */,
+				F36E3313272042E90047FB32 /* Modifiers.swift in Sources */,
 				F326B693271EF69500B7762D /* ContentView.swift in Sources */,
+				F36E3311272042860047FB32 /* LogoView.swift in Sources */,
 				F326B691271EF69500B7762D /* Slot_MaiaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
