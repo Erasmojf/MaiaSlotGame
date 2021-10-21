@@ -114,6 +114,7 @@ struct ContentView: View {
                     }//HStack
                     .modifier(ScoreContainerModifier())
                 }
+                
                 // MARK: - SLOT MACHINE
                 VStack(alignment: .center, spacing: 0) {
                     // MARK: - REEL #1
@@ -132,7 +133,9 @@ struct ContentView: View {
                                 .resizable()
                                 .modifier(ImageModifier())
                         }//ZStack
+                        
                         Spacer()
+                        
                         // MARK: - REEL #3
                         ZStack {
                             RealView()
@@ -162,6 +165,7 @@ struct ContentView: View {
                     }
                     
                 }// VStack
+                
                 .layoutPriority(2)
                 
                 // MARK: - FOOTER
