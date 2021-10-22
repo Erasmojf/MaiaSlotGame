@@ -13,6 +13,8 @@ struct ContentView: View {
     // MARK: - PROPERTIES
     let symbols = ["gfx-bell", "gfx-cherry", "gfx-coin", "gfx-grape" ,"gfx-seven", "gfx-strawberry"]
     
+    let haptics = UINotificationFeedbackGenerator()
+    
     @State private var highscore: Int = UserDefaults.standard.integer(forKey: "HighScore")
     @State private  var coins: Int = 100
     @State private var betAmount: Int = 10
@@ -32,15 +34,20 @@ struct ContentView: View {
         reels = reels.map({ _ in
             Int.random(in: 0...symbols.count - 1)
         })
+        playSound(sound: "spin", type: "mp3")
+        haptics.notificationOccurred(.success)
     }
     
     func checkWinning() {
         if reels[0] == reels[1] && reels[1] == reels[2] && reels[0] == reels[2] {
             // MARK: - PLAYER WINS
             playerWings()
+            
             // MARK: - NEW HIGHSCORE
             if coins > highscore {
                 newHighScore()
+            } else {
+                playSound(sound: "win", type: "mp3")
             }
             
         } else {
@@ -55,25 +62,32 @@ struct ContentView: View {
     func newHighScore() {
         highscore = coins
         UserDefaults.standard.set(highscore, forKey: "HighScore")
+        playSound(sound: "high-score", type: "mp3")
     }
     func playerLoses() {
         coins -= betAmount
     }
     func activateBet20() {
         betAmount = 20
+        isActiveBet20 = true
+        isActiveBet10 = false
+        playSound(sound: "casino-chips", type: "mp3")
+        haptics.notificationOccurred(.success)
     }
     func activateBet10() {
         betAmount = 10
+        isActiveBet10 = true
+        isActiveBet20 = false
+        playSound(sound: "casino-chips", type: "mp3")
+        haptics.notificationOccurred(.success)
     }
-    
-    // MARK: - SPIN THE REELS
-    // MARK: - CHECK THE WINNING
     
     // MARK: - GAME IS OVER
     func isGameOver() {
         if coins <= 0 {
             //Show Modal Window
             showingModal = true
+            playSound(sound: "game-over", type: "mp3")
         }
     }
     
@@ -82,6 +96,7 @@ struct ContentView: View {
         highscore = 0
         coins = 100
         activateBet10()
+        playSound(sound: "chimeup", type: "mp3")
     }
     // MARK: - BODY
     var body: some View {
@@ -137,6 +152,7 @@ struct ContentView: View {
                             .animation(.easeOut(duration: Double.random(in: 0.5...0.7)))
                             .onAppear(perform: {
                                 self.animatingSymbol.toggle()
+                                playSound(sound: "riseup", type: "mp3")
                             })
                     }//ZStack
                     
