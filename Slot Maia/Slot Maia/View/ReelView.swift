@@ -9,7 +9,7 @@
 
 import SwiftUI
 
-struct RealView: View {
+struct ReelView: View {
     var body: some View {
         Image("gfx-reel")
             .resizable()
@@ -19,7 +19,7 @@ struct RealView: View {
 
 struct RealView_Previews: PreviewProvider {
     static var previews: some View {
-        RealView()
+        ReelView()
             .previewLayout(.fixed(width: 220, height: 220))
     }
 }

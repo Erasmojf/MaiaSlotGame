@@ -18,7 +18,7 @@ struct ContentView: View {
     @State private var betAmount: Int = 10
     @State private var reels: Array = [0, 1, 2]
     @State private var showingInfoView: Bool = false
-    @State private var isActiveBet10: Bool = false
+    @State private var isActiveBet10: Bool = true
     @State private var isActiveBet20: Bool = false
     @State private var showingModal: Bool = false
     @State private var animatingSymbol: Bool = false
@@ -128,7 +128,7 @@ struct ContentView: View {
                 VStack(alignment: .center, spacing: 0) {
                     // MARK: - REEL #1
                     ZStack {
-                        RealView()
+                        ReelView()
                         Image(symbols[reels[0]])
                             .resizable()
                             .modifier(ImageModifier())
@@ -143,7 +143,7 @@ struct ContentView: View {
                     HStack(alignment: .center, spacing: 0) {
                         // MARK: - REEL #2
                         ZStack {
-                            RealView()
+                            ReelView()
                             Image(symbols[reels[1]])
                                 .resizable()
                                 .modifier(ImageModifier())
@@ -159,7 +159,7 @@ struct ContentView: View {
                         
                         // MARK: - REEL #3
                         ZStack {
-                            RealView()
+                            ReelView()
                             Image(symbols[reels[2]])
                                 .resizable()
                                 .modifier(ImageModifier())
@@ -231,9 +231,7 @@ struct ContentView: View {
                             .modifier(CasinoChipsModifier())
                         
                     }//HStack
-                    
                     Spacer()
-                    
                     // MARK: - BET 10
                     HStack(alignment: .center, spacing: 10) {
                         Image("gfx-casino-chips")

@@ -22,7 +22,7 @@
 		F36E3311272042860047FB32 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36E3310272042860047FB32 /* LogoView.swift */; };
 		F36E3313272042E90047FB32 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36E3312272042E90047FB32 /* Modifiers.swift */; };
 		F36E3315272049DF0047FB32 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36E3314272049DF0047FB32 /* Extensions.swift */; };
-		F36E331727204EC80047FB32 /* RealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36E331627204EC80047FB32 /* RealView.swift */; };
+		F36E331727204EC80047FB32 /* ReelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36E331627204EC80047FB32 /* ReelView.swift */; };
 		F36E331927205FFF0047FB32 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36E331827205FFF0047FB32 /* InfoView.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,7 +43,7 @@
 		F36E3310272042860047FB32 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		F36E3312272042E90047FB32 /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
 		F36E3314272049DF0047FB32 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		F36E331627204EC80047FB32 /* RealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealView.swift; sourceTree = "<group>"; };
+		F36E331627204EC80047FB32 /* ReelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelView.swift; sourceTree = "<group>"; };
 		F36E331827205FFF0047FB32 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,7 +124,7 @@
 			children = (
 				F326B692271EF69500B7762D /* ContentView.swift */,
 				F36E3310272042860047FB32 /* LogoView.swift */,
-				F36E331627204EC80047FB32 /* RealView.swift */,
+				F36E331627204EC80047FB32 /* ReelView.swift */,
 				F36E331827205FFF0047FB32 /* InfoView.swift */,
 			);
 			path = View;
@@ -212,7 +212,7 @@
 				F36E3313272042E90047FB32 /* Modifiers.swift in Sources */,
 				F326B693271EF69500B7762D /* ContentView.swift in Sources */,
 				F36E3311272042860047FB32 /* LogoView.swift in Sources */,
-				F36E331727204EC80047FB32 /* RealView.swift in Sources */,
+				F36E331727204EC80047FB32 /* ReelView.swift in Sources */,
 				F326B691271EF69500B7762D /* Slot_MaiaApp.swift in Sources */,
 				F36E331927205FFF0047FB32 /* InfoView.swift in Sources */,
 			);
